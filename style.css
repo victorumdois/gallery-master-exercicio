@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+body{
+    margin: 3% 15vw 0% 15vw;
+
+
+    
+}
+
+
+header{
+    text-align: center;
+}
+header > img{
+    /*width: max(12%, 100px);*/
+    width: 156px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+header > h1{
+    font-weight: 600;
+    font-size: 24px;
+    color: #4E5150;
+    margin-bottom: 8px;
+}
+header > p{
+    color: #A9A9A9;
+    font-weight: 600;
+    size: 14px;
+    margin-bottom: 24px;
+}
+#profileItens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64PX;
+    
+}
+.profileItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #E5E5E5;
+    border-radius: 12px;
+
+    width: 100px;
+    height: 67px;
+}
+.item{
+    font-weight: 600;
+    size: 14px;
+    color: #BDBDBD;
+}
+.itemValor{
+    size: 18px;
+    font-weight: 600;
+    color: #4E5150;
+}
+
+
+
+
+
+
+#gallery{
+    display: grid;
+    gap: 3%;
+    grid-template-areas:
+        "cama sofa sofa"
+        "banheira banheira lampada"
+        "mesa planta lampada";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#gallery > img{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,0.39);
+}
+
+
+#cama{
+    grid-area: cama;
+}
+#sofa{
+    grid-area: sofa;
+}
+#banheira{
+    grid-area: banheira; 
+}
+#lampada{
+    grid-area: lampada;
+}
+#mesa{
+    grid-area: mesa;
+}
+#planta{
+    grid-area: planta;
+}
+
+
+footer{
+    font-weight: 500;
+    size: 14px;
+    text-align: center;
+    color: #B9BDCF;
+    margin-top: 134px;
+    margin-bottom: 18px;
+}
+#username{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    body{20
+        margin-left: min (242px, 62vw);
+        margin-right: min (242px, 62vw);
+        /*margin: 30px 62px 24px 62px;*/
+        margin-top: 30px;
+        margin-bottom: 24px;
+    }
+
+    header > img{
+        width: 25vw;
+        max-width: 156px;
+        
+        margin-bottom: 3.16vw;
+    }
+
+    header > h1{
+        font-size: 3.68vw;
+    }
+
+    header > p{
+        font-size: 2.63vw;
+    }
+
+    footer{
+        font-size: 3vw;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 460px) {
+    body{
+        margin: 30px 12px 24px 12px;
+    }
+
+
+
+    header > img{
+        width: 101px;
+        margin-bottom: 12px;
+    }
+    header > h1{
+    font-size: 14px;
+    }
+    header > p{
+        font-size: 10px;
+    }
+    .profileItem{
+        width: 78px;
+        height: 52px;
+    }
+    .itemValor{
+        font-size: 12px;
+    }
+    .item{
+        font-size: 12px;
+    }
+    #profileItens{
+        margin-bottom: 39PX;
+        gap: 12px;
+    }
+
+
+
+    footer{
+                
+        font-size: 3,68vw;
+        margin-top: 44px;
+        margin-bottom: 24px;
+    }
+
+}
+
+
+
+
+
+
